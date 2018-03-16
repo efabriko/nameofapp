@@ -1,6 +1,6 @@
-<% @products.each do |product| %>
+
   <div class="col-sm-2 col-md-4">
-    <p><%= image_tag("racebike.jpg", class: "img-responsive") %></p>
+    <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
       <p><a href="#"><h1><%= product.name %></h1></a></p>
       <p><%= product.description %></p>
       <p><%= product.image_url %></p>
@@ -12,4 +12,8 @@
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }%>  
       </p>
   </div><!-- /col -->
-<% end %>
+
+
+
+
+<!-- https://www.topvelo.fr/documents/Image/velo-hybride-2.jpg -->
