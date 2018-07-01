@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
+gem 'cancancan', '~> 2.0'
+# Use Cancancan for Authorization
+
 group :production do
   gem 'pg', '~> 0.18'
 end
