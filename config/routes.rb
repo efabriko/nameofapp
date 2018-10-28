@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   
   devise_for :users
+  
   resources :users
-  resources :products
+
+  resources :products do
+    resources :comments
+  end
   
   get 'simple_pages/about'
 
